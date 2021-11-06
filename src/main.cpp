@@ -23,12 +23,12 @@ int main()
             // std::cout << COUP A JOUER;
             std::cout << data.width / 2 << std::endl;
             outfile << data.width/2 << std::endl;
-            data.updateField(data.width/2, 'O');
+            data.updateField(data.width/2, data.myChar);
         }
         std::getline(std::cin, line);
         i++;
         outfile << line << std::endl;
-        data.updateField(atoi(line.c_str()),'X');
+        data.updateField(atoi(line.c_str()),data.ennemiChar);
         data.player_start = 1;
     }
 }

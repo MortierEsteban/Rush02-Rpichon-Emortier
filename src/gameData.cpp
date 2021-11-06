@@ -22,6 +22,10 @@ gain(0),time(0),winLen(0),player_start(0),lastPlay(-1) {
 		}
 		i++;
 	}
+	if (player_start == 1)
+	{ myChar = 'A'; ennemiChar = 'B' }
+	else
+	{ myChar = 'B'; ennemiChar = 'A' }
 	initGameTab();
 }
 

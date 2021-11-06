@@ -23,6 +23,9 @@ public:
 				void	initGameTab();
 				void	dispGameTab();
 				void	updateField(int i, char whoPlay);
+				bool	checkWin(char verif, int posx, int posy);
+				int		recursive_find(int x, int y,char teamletter,std::vector<std::vector<char > >Tmptab, int depth);
+				std::vector<std::vector<char > > getGameTab(void) {return gameTab;}
 private:
 		std::vector<std::vector<char > > gameTab;
 };
